@@ -49,7 +49,7 @@ namespace No_Peeping_At_My_Mods
 
             if(enabled)
             {
-                if (GetPhotonViewFromVR(GorillaTagger.Instance.myVRRig.gameObject).Controller.CustomProperties.ContainsValue(newPrep))
+                if (!GetPhotonViewFromVR(GorillaTagger.Instance.myVRRig.gameObject).Controller.CustomProperties.ContainsValue(newPrep))
                 {
                     Hashtable hash = new Hashtable();
                     hash.Add("mods", newPrep);
